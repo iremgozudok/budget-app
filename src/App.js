@@ -1,5 +1,6 @@
 import { Button, Stack } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
+import BudgetCard from "./components/BudgetCard";
 
 function App() {
   return (
@@ -16,7 +17,14 @@ function App() {
           grid: "1fr",
           alignItems: "flex-start",
         }}
-      ></div>
+      >
+        <BudgetCard
+          name="Entertainment"
+          gray
+          amount={1100}
+          max={1000}
+        ></BudgetCard>
+      </div>
     </Container>
   );
 }
